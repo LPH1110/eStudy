@@ -1,4 +1,16 @@
 @import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&display=swap');
+
+:root {
+    --font-family: 'Baloo 2', cursive;
+    --white: #fff;
+    --primary-color: #1fc9ff;
+    --text-color: #262b33;
+    --searchBar-width: 361px;
+    --light-btn-color: rgba(167, 167, 171, 1);
+    --default-transition: 0.2s ease-in-out;
+    --header-height: 74px;
+}
 
 * {
     margin: 0;
@@ -14,4 +26,24 @@ body {
     font-size: 1.4rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+    font-family: var(--font-family);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: var(--font-family);
 }
