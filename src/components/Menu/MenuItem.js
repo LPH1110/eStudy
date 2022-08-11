@@ -30,6 +30,8 @@ const MenuItem = forwardRef(({ data, onClick, className, onMouseOver }, ref) => 
 MenuItem.propTypes = {
     data: PropTypes.object.isRequired,
     onClick: PropTypes.func,
+    className: PropTypes.string,
+    onMouseOver: PropTypes.func,
 };
 
 export default MenuItem;

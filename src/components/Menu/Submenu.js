@@ -2,6 +2,7 @@ import { Button } from '~/components';
 import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
 import MenuItem from './MenuItem';
+import PropTypes from 'prop-types';
 
 const cx = classNames.bind(styles);
 
@@ -23,5 +24,9 @@ function Submenu({ data }) {
         </div>
     );
 }
+
+Submenu.propTypes = {
+    data: PropTypes.object.isRequired,
+};
 
 export default Submenu;

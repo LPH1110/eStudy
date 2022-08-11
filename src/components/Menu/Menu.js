@@ -75,6 +75,8 @@ function Menu({ items, children, className, multiLevelMenu, hideOnClick = false,
 Menu.propTypes = {
     items: PropTypes.array.isRequired,
     children: PropTypes.node.isRequired,
+    className: PropTypes.string,
+    multiLevelMenu: PropTypes.bool,
     hideOnClick: PropTypes.bool,
     onChange: PropTypes.func,
 };
