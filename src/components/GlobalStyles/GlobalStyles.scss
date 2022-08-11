@@ -1,5 +1,5 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&display=swap');
 
 :root {
     --font-family: 'Baloo 2', cursive;
@@ -25,7 +25,7 @@ html {
 body {
     font-size: 1.4rem;
     line-height: 1.5;
-    text-rendering: optimizeSpeed;
+    text-rendering: optimizeLegibility;
     font-family: var(--font-family);
 }
 
@@ -46,4 +46,27 @@ input,
     border: none;
     background-color: transparent;
     font-family: var(--font-family);
+}
+
+// Util css
+.headerActive {
+    transition: var(--default-transition);
+    background-color: var(--white);
+    box-shadow: 0 0.65rem 1rem rgba(18, 38, 63, 0.03);
+}
+
+.menu-width-sm {
+    width: 250px;
+}
+
+.menu-width-md {
+    max-width: 582px;
+}
+
+.text-active {
+    color: var(--primary-color) !important;
+}
+
+.bg-color-active {
+    background-color: rgba(22, 24, 35, 0.05) !important;
 }

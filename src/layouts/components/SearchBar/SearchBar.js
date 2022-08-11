@@ -3,19 +3,22 @@ import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { ClearIcon } from '~/components/Icons';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 const cx = classNames.bind(styles);
 
 function SearchBar() {
+    const inputRef = useRef();
     const [searchValue, setSearchValue] = useState('');
     const handleClearSearchValue = () => {
         setSearchValue('');
+        inputRef.current.focus();
     };
     return (
         <div className={cx('wrapper')}>
             <form className={cx('inner')}>
                 <input
+                    ref={inputRef}
                     value={searchValue}
                     placeholder="Search some materials..."
                     onChange={(e) => setSearchValue(e.target.value)}

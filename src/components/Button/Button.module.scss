@@ -10,7 +10,6 @@
     background-color: var(--white);
     display: inline-flex;
     align-items: center;
-    justify-content: center;
     user-select: none;
 
     + .wrapper {
@@ -42,20 +41,28 @@
 
 .icon {
     display: inline-flex;
-    width: 20px;
     text-align: center;
     align-items: center;
+
+    img {
+        width: 32px;
+    }
+}
+
+.left-icon {
+    margin-right: 12px;
 }
 
 .title {
     font-family: var(--font-family);
-    font-weight: 600;
+    text-align: left;
 }
 
 .solid-primary {
     background-color: var(--primary-color);
     color: white;
     transition: var(--default-transition);
+    font-weight: 700;
 
     &:hover {
         color: white;
