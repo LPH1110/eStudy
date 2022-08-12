@@ -27,6 +27,7 @@ body {
     line-height: 1.5;
     text-rendering: optimizeLegibility;
     font-family: var(--font-family);
+    scroll-behavior: smooth;
 }
 
 a {
@@ -85,4 +86,12 @@ html *::-webkit-scrollbar-track {
 
 .bg-color-active {
     background-color: rgba(22, 24, 35, 0.05) !important;
+}
+
+.revert {
+    flex-direction: row-reverse;
+}
+
+.txt-align-right {
+    text-align: right;
 }

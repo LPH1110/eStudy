@@ -10,6 +10,11 @@ const images = {
     folder: require('~/assets/images/folder.png'),
     users: require('~/assets/images/users.png'),
     document: require('~/assets/images/document.png'),
+    poster: require('~/assets/images/poster.jpg'),
+    quote1: require('~/assets/images/quote1.avif'),
+    quote2: require('~/assets/images/quote2.avif'),
+    quote3: require('~/assets/images/quote3.avif'),
+    quote4: require('~/assets/images/quote4.avif'),
 };
 
 export default images;
