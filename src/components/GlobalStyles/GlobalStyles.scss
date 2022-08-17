@@ -1,11 +1,14 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&display=swap');
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
 
 :root {
     --font-family: 'Baloo 2', cursive;
     --white: #fff;
     --primary-color: #1fc9ff;
     --text-color: #262b33;
+    --light-txt-color: #a9a9a9;
     --searchBar-width: 361px;
     --light-btn-color: rgba(167, 167, 171, 1);
     --default-transition: 0.2s ease-in-out;
@@ -28,7 +31,7 @@ body {
     text-rendering: optimizeLegibility;
     font-family: var(--font-family);
     scroll-behavior: smooth;
-    overflow: overlay;
+    overflow: hidden overlay;
 }
 
 a {
@@ -105,6 +108,15 @@ html *::-webkit-scrollbar-track {
     padding: 40px 0;
 }
 
+.py-125 {
+    padding: 125px 0;
+}
+
 .mt-10 {
     margin-top: 10px;
+}
+
+// Override Slick Slider
+.slick-list {
+    overflow: unset !important;
 }

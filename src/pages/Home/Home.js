@@ -2,6 +2,7 @@ import images from '~/assets/images/index.js';
 import News from './components/News/News.js';
 import Poster from './components/Poster/Poster.js';
 import Quotes from './components/Quotes/Quotes.js';
+import Reviews from './components/Reviews/Reviews.js';
 import Teacher from './components/Teacher/Teacher.js';
 
 const quotes = [
@@ -40,6 +41,7 @@ function Home() {
         <div className="wrapper">
             <Poster />
             <Quotes quotes={quotes} />
+            <Reviews />
             <News />
             <Teacher />
         </div>

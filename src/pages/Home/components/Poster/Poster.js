@@ -3,6 +3,7 @@ import images from '~/assets/images';
 import classNames from 'classnames/bind';
 import styles from './Poster.module.scss';
 import { Button } from '~/components';
+import { memo } from 'react';
 
 const cx = classNames.bind(styles);
 
@@ -34,4 +35,4 @@ function Poster() {
     );
 }
 
-export default Poster;
+export default memo(Poster);

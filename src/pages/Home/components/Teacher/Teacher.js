@@ -15,7 +15,7 @@ function Teacher() {
                         <span className={cx('slogan')}>Empower your students</span>
                         <p className={cx('desc')}>
                             Help every student learn anything with confidence, no matter what they’re striving to
-                            achieve. Using Quizlet’s free study sets, study modes and in-class game, you can motivate
+                            achieve. Using eStudy’s free study sets, study modes and in-class game, you can motivate
                             your students quickly.
                         </p>
                         <Button type="text" size="medium" className={cx('teacher-btn')}>

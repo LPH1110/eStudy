@@ -16,6 +16,7 @@
     .left,
     .right {
         display: flex;
+        align-items: center;
     }
 }
 
@@ -25,16 +26,15 @@
 }
 
 .logo-link {
-    min-width: 5.9375rem;
     height: 100%;
     display: inline-flex;
     align-items: center;
     padding: 0 10px;
+    margin-right: 6px;
 }
 
 .logo {
-    height: 50px;
-    width: 95px;
+    object-fit: cover;
 }
 
 .login-btn {
