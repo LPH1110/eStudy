@@ -15,6 +15,12 @@ const images = {
     quote2: require('~/assets/images/quote2.avif'),
     quote3: require('~/assets/images/quote3.avif'),
     quote4: require('~/assets/images/quote4.avif'),
+    cover1: require('~/assets/images/cover1.png'),
+    cover2: require('~/assets/images/cover2.png'),
+    cover3: require('~/assets/images/cover3.png'),
+    shield: require('~/assets/images/shield.png'),
+    arrowDown: require('~/assets/images/arrow-down.png'),
+    seal: require('~/assets/images/seal.png'),
 };
 
 export default images;

@@ -1,6 +1,8 @@
 import images from '~/assets/images/index.js';
+import News from './components/News/News.js';
 import Poster from './components/Poster/Poster.js';
-import Quote from './components/Quote/Quote.js';
+import Quotes from './components/Quotes/Quotes.js';
+import Teacher from './components/Teacher/Teacher.js';
 
 const quotes = [
     {
@@ -35,15 +37,11 @@ const quotes = [
 
 function Home() {
     return (
-        <div className="container">
+        <div className="wrapper">
             <Poster />
-            {quotes.map((quote) => {
-                return quote.isRevert ? (
-                    <Quote key={quote.id} title={quote.title} desc={quote.desc} thumbnail={quote.thumbnail} revert />
-                ) : (
-                    <Quote key={quote.id} title={quote.title} desc={quote.desc} thumbnail={quote.thumbnail} />
-                );
-            })}
+            <Quotes quotes={quotes} />
+            <News />
+            <Teacher />
         </div>
     );
 }

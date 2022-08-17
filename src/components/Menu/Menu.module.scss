@@ -43,6 +43,7 @@
 .sub-menu {
     width: 60%;
     border-left: 1px solid rgba(204, 204, 204, 0.292);
+    overflow: hidden auto;
 
     .cursor-pointer {
         cursor: pointer;

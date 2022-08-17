@@ -10,7 +10,7 @@ function Quote({ title, desc, thumbnail, revert }) {
     });
 
     return (
-        <section className={cx('wrapper')}>
+        <div className={cx('wrapper')}>
             <div className={rowClasses}>
                 <div className={cx('col-lg-6', 'content')}>
                     <h1 className={cx('title')}>{title}</h1>
@@ -20,7 +20,7 @@ function Quote({ title, desc, thumbnail, revert }) {
                     <Image src={thumbnail} alt="poster" className={cx('image')} />
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 
